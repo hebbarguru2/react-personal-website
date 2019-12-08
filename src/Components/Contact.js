@@ -42,12 +42,12 @@ class Contact extends Component {
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange} required/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange} required/>
                   </div>
 
                   <div>
@@ -57,7 +57,7 @@ class Contact extends Component {
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="1" rows="1" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="1" rows="1" id="contactMessage" name="contactMessage" required></textarea>
                   </div>
 
                   <div>
@@ -83,8 +83,8 @@ class Contact extends Component {
 					   <p className="address">
 						   {name}<br />
 						   {street} <br />
-						   {city}, {state} <br />
-                     {country},{zip} <br/>
+						   {zip}, {city}, {country} <br />
+                     {/* {country},{zip} <br/> */}
 						   <span>{phone}</span><br/>
                      {email}<br/>
 					   </p>

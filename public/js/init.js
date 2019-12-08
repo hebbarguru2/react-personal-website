@@ -146,15 +146,21 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      // var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
+      //          '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      
+      var data = {'contactName' : contactName , 'contactEmail' : contactEmail ,
+               'contactSubject' : contactSubject , 'contactMessage' : contactMessage};
+
 
       $.ajax({
 
 	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
+	      url: "mail/sendmail",
+         data: JSON.stringify(data),
+         contentType: "application/json; charset=utf-8",
+         dataType: "json",
+	      complete: function(msg) {
 
             // Message was sent
             if (msg == 'OK') {
@@ -170,8 +176,7 @@
 	            $('#message-warning').fadeIn();
             }
 
-	      }
-
+         }
       });
       return false;
    });

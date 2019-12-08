@@ -5,14 +5,14 @@
     "description":"Self-driven and motivated with experience of almost 3 years in developing user-friendly web applications.Highly enthusiastic and a team player to bring out the best in me.",
     "image":"profilepic.jpg",
     "bio":"I am currently pursuing my Master’s degree in Electrical Engineering with a major in Biomedical Systems Engineering at RWTH Aachen University, Germany. During the course of my academic career, I also managed to accrue nearly 3 years of work experience. I had the privilege of working for Robert Bosch Engineering and Business Solutions Limited (BOSCH) as a Software Developer under the corporate research department. During my time as a Software developer, I had various opportunities to work on topics such as Machine Learning, Microservices, Software Development, UX Design and many more and even collaborated with scientists and customers. I was consistently praised as a creative thinker and results-oriented by my peers. I also love playing table tennis, football, billiards, cooking and going on a nature trek.",
-    "contactmessage":"Got an internship offer for me ? Or would like to get to know more about me? Please use the below form or send me an email.(Form doesn't work currently, please contact through mail.)",
+    "contactmessage":"Got an internship offer for me ? Or would like to get to know more about me? Please use the below form or send me an email.",
     "email": "guruhebbar2@gmail.com",
     "phone": "(+49) 1573 7730255",
     "address":{
-      "street":"Schillerstrasse 88",
+      "street":"1205,Schillerstrasse 88",
       "city":"Aachen",
       "state":"NRW",
-      "country":"Germany",
+      "country":"DE",
       "zip": "52064"
     },
     "website": "http://www.guruhebbar.ml",
@@ -100,10 +100,20 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Microaneurysms detection",
+        "title":"Machine Learning",
+        "category":"Machine Learning",
+        "image":"machine-learning.jpg",
+        "url":"https://www.coursera.org/account/accomplishments/certificate/KZ4Z3964HMJH"
+      },{
+        "title":"Image and Video Processing",
         "category":"Image Processing",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "image":"image-processing.jpg",
+        "url":"https://www.coursera.org/account/accomplishments/certificate/VMYVTKRZ979L"
+      },{
+        "title":"An Introduction to interactive programming in Python",
+        "category":"Python",
+        "image":"python.jpg",
+        "url":"https://www.coursera.org/learn/interactive-python-1"
       }
     ]
   },
